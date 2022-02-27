@@ -60,28 +60,38 @@ Original App Design Project - README Template
    * Can tap on a dining hall to go to food selection screen
    * Icon to switch to profile screen
 * Food selection screen
-   * Shows all the different options from the dining halls in a table cell with 
-   * ...
-* [list first screen here]
-   * [list associated required story here]
-   * ...
+   * Shows all the different options from the dining halls in a table cell with price, rating, and food tags
+   * Can click on each cell to open food description screen
+* Food description screen
+   * Shows description of food, rating, price, food tags (ie dairy free, vegan), images, and reviews
+   * Button to create review and and uploading pictures
+   * Allow users to click and view other profiles
+   * Each review can be upvoted or downvoted, reviews are prioritized by votes
+* Profile Screen
+   * User can see statistics about their account (ie. number of posts, upvotes, etc.)
+   * User can see a feed of their posts.
+   * User can click a button to go to the settings screen
+* Settings Screen
+   * User can change their email/password
+   * Dark/Light mode
+   * Logout button
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Home/Food
+* Profile
+* Settings*
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Forced Log-in -> Account creation if no log in is availble
+   * Login/Register -> Homepage/Food
+* Clicking on dining hall -> Click on specific Food -> Brings you to reviews of that dish
+   * Click on another user's profile picture to view their profile screen
+* Profile nagivation bar button leads to user's profile page
+   * Possibly settings option inside profile page?
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
