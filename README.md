@@ -18,12 +18,11 @@ Original App Design Project - README Template
  review.]
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category: Food / Lifestylezz**
-- **Mobile: Focused mainly towards mobile use. Harder to submit reviews with photos on a computer. **
-- **Story: Allows students to see reviews of different food choices at each dining hall so they can choose better meals. 
-- **Market: Mainly targeted towards UCSD students, as they purchase food from the dining halls the most often. **
-- **Habit: This app coule be used as often as a user wants, primarily for reviewing food or discovering new food. **
+- **Mobile: Focused mainly towards mobile use. Harder to submit reviews with photos on a computer.**
+- **Story: Allows students to see reviews of different food choices at each dining hall so they can choose better meals.**
+- **Market: Mainly targeted towards UCSD students, as they purchase food from the dining halls the most often.**
+- **Habit: This app coule be used as often as a user wants, primarily for reviewing food or discovering new food.**
 - **Scope: First we could start with just reviews of UCSD dining halls. Next, we could review restaurants on campus not affiliated with HDH. Then, we could review other aspects of the UCSD campus such as study places, hangout spots, sunset views, etc...**
 
 ## Product Spec
@@ -32,7 +31,7 @@ Original App Design Project - README Template
 
 **Required Must-have Stories**
 
-* User can register or login to v\post reviews. 
+* User can register or login to post reviews. 
 * User can select betwen different dining halls and the view food options from each dining hall. 
 * Rating system out of five stars for each dining hall and food item.
 * Food page includes description and price, average rating of food.
