@@ -32,7 +32,6 @@ Original App Design Project - README Template
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
 * User can register or login to v\post reviews. 
 * User can select betwen different dining halls and the view food options from each dining hall. 
 * Rating system out of five stars for each dining hall and food item.
@@ -42,7 +41,6 @@ Original App Design Project - README Template
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
 * Photos of food
 * User can change account settings/preferences in the settings panel
 * Map of campus with dining hall locations marked
