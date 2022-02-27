@@ -96,7 +96,7 @@ Original App Design Project - README Template
 
 
 ### [BONUS] Digital Wireframes & Mockups
-![IMG 3985](https://imgur.com/sYWFjST)
+<img src="https://imgur.com/sYWFjST.jpg" width=400><br>
 
 ### [BONUS] Interactive Prototype
 
