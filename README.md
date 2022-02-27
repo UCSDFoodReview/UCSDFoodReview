@@ -92,7 +92,6 @@ Original App Design Project - README Template
    * Possibly settings option inside profile page?
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
 ![IMG_3984](https://user-images.githubusercontent.com/65835856/155865925-d97f84bf-b999-443a-b02c-58beabf2a5ff.jpg)
 
 
