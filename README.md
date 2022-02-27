@@ -54,11 +54,13 @@ Original App Design Project - README Template
 * Login/Register - User signs up or logs into their account
    * If user has not registered, prompt the user to sign up to comment and post
    * Login state saved even if app closed and reopened
-* Home Screen 
-   * Screen that shows all the dining hall options
-   * 
-* [list first screen here]
-   * [list associated required story here]
+* Home/Dining Hall Screen 
+   * Screen that shows all the dining hall options with their ratings
+   * Can scroll up and down to see different dining halls
+   * Can tap on a dining hall to go to food selection screen
+   * Icon to switch to profile screen
+* Food selection screen
+   * Shows all the different options from the dining halls in a table cell with 
    * ...
 * [list first screen here]
    * [list associated required story here]
