@@ -93,7 +93,8 @@ Original App Design Project - README Template
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-[image](https://user-images.githubusercontent.com/65835856/155865885-b62b1bb0-21dd-4695-a43e-0b8de104280a.jpeg)
+![IMG_3984](https://user-images.githubusercontent.com/65835856/155865925-d97f84bf-b999-443a-b02c-58beabf2a5ff.jpg)
+
 
 ### [BONUS] Digital Wireframes & Mockups
 
