@@ -148,27 +148,30 @@ Original App Design Project - README Template
 
 ### Networking
 #### List of network requests by screen
-   - Home Feed Screen
-      - (Read/GET) Query all posts where user is author
+   - Login Screen
+     - (Create/POST) Create new user
+     - (Read/GET) Read and login an existing user
+   - Dining Hall Screen
+      - (Read/GET) Query all Dining Halls
          ```swift
-         let query = PFQuery(className:"Post")
-         query.whereKey("author", equalTo: currentUser)
-         query.order(byDescending: "createdAt")
-         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+         let query = PFQuery(className:"DiningHall")
+         query.order(byDescending: "diningHallName")
+         query.findObjectsInBackground { (diningHalls: [PFObject]?, error: Error?) in
             if let error = error { 
                print(error.localizedDescription)
-            } else if let posts = posts {
-               print("Successfully retrieved \(posts.count) posts.")
+            } else if let diningHalls = diningHalls {
+               print("Successfully retrieved \(diningHalls.count) dining halls.")
            // TODO: Do something with posts...
             }
          }
          ```
-      - (Create/POST) Create a new like on a post
-      - (Delete) Delete existing like
-      - (Create/POST) Create a new comment on a post
-      - (Delete) Delete existing comment
-   - Create Post Screen
-      - (Create/POST) Create a new post object
+   - Food Screen
+     - (Read/GET) Query all the reviews of that food from that dining hall
+     - (Update/PUT) Changes karma of each post (optional)
+   - Review Screen
+     - (Create/POST) Create a new review
+     - (Update/PUT) Update the ratings after a review
    - Profile Screen
-      - (Read/GET) Query logged in user object
-      - (Update/PUT) Update user profile image
+     - (Update/PUT) Change their password
+     - (Update/PUT) Change their profile picture
+     - (Read/GET) Show total karma (optional)
