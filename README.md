@@ -101,18 +101,51 @@ Original App Design Project - README Template
 
 ## Schema 
 ### Models
-#### Post
+
+#### User Object
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | objectId      | String   | unique id for the user post (default field) |
-   | author        | Pointer to User| image author |
-   | image         | File     | image that user posts |
-   | caption       | String   | image caption by author |
-   | commentsCount | Number   | number of comments that has been posted to an image |
-   | likesCount    | Number   | number of likes for the post |
-   | createdAt     | DateTime | date when post is created (default field) |
-   | updatedAt     | DateTime | date when post is last updated (default field) |
+   | userID       | String   | Unique id for the userObj|
+   | profilePic       | File   | Image for the user profile picture|
+   | username       | String   | Username for the user|
+   | password       | String   | Password for the user login|
+   | userReviews (optional)     | List or Array   | A list or array of user review objects|
+   | numOfKarma (optional)      | Number   | Total "upvotes and downvotes" that the user recieved|
+
+#### Review Object
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | author        | Pointer to User| Has all the data from user: take username and profile picture|
+   | review       | String   | Review of the food item |
+   | reviewCount | Number   | Number of reviews that has been posted |
+   | ratings | Number   | Average star ratings |
+   | totalKarma    | Number   | Number of likes - dislikes |
+   | foodReviewed    | Pointer to Food | Has all data from food: take food name |
+   | createdAt (optional)    | DateTime | date when post is created (default field) |
+   
+
+#### Dining Hall Object
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | diningHallName  | String| Name of dining hall |
+   | foodList         | List or Array    | List or array of food objects|
+   | hallDescription         | String    | Short description of dining hall. Potentially include location|
+   | location (optional)       | (depends on implementation)    | most likely need an api call.|
+   
+
+#### Food Object
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | foodName        | String | Name of food |
+   | foodDescription (optional)  | String     | Description of food |
+   | foodImage (optional) | File   | Image of food |
+   | averageRating    | Number   | Average rating of the food |
+   | reviews     | List or Array | List of pointers of all the reviews for that food |
+
 ### Networking
 #### List of network requests by screen
    - Home Feed Screen
