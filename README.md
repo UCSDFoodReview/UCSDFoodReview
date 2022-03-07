@@ -99,7 +99,7 @@ Original App Design Project - README Template
 
 
 ### [BONUS] Interactive Prototype
-- Added as a file in main branch 
+<img src=gifOfWireframe.gif width=400><br>
 
 ## Schema 
 ### Models
