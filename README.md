@@ -95,9 +95,11 @@ Original App Design Project - README Template
 
 
 ### [BONUS] Digital Wireframes & Mockups
-<img src="https://imgur.com/sYWFjST.jpg" width=400><br>
+<img width="1065" alt="Screen Shot 2022-03-06 at 17 55 16" src="https://user-images.githubusercontent.com/65835856/156956018-e3900e8a-0e62-4289-bf26-d146010c4905.png">
+
 
 ### [BONUS] Interactive Prototype
+- Added as a file in main branch 
 
 ## Schema 
 ### Models
