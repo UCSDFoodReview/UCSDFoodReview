@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C0C65B51A87CF905746605F /* Pods_UCSD_Food_ReviewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B13266F51B232CA19856571C /* Pods_UCSD_Food_ReviewTests.framework */; };
+		4C1CA22327D9B05400D88A5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1CA22227D9B05400D88A5E /* AppDelegate.swift */; };
+		4C1CA22527D9B05400D88A5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1CA22427D9B05400D88A5E /* SceneDelegate.swift */; };
+		4C1CA22727D9B05400D88A5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1CA22627D9B05400D88A5E /* ViewController.swift */; };
+		4C1CA22A27D9B05500D88A5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1CA22827D9B05500D88A5E /* Main.storyboard */; };
+		4C1CA22C27D9B05800D88A5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1CA22B27D9B05800D88A5E /* Assets.xcassets */; };
+		4C1CA22F27D9B05800D88A5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1CA22D27D9B05800D88A5E /* LaunchScreen.storyboard */; };
+		4C1CA23A27D9B05800D88A5E /* UCSD_Food_ReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1CA23927D9B05800D88A5E /* UCSD_Food_ReviewTests.swift */; };
+		4C1CA24427D9B05800D88A5E /* UCSD_Food_ReviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1CA24327D9B05800D88A5E /* UCSD_Food_ReviewUITests.swift */; };
+		4C1CA24627D9B05800D88A5E /* UCSD_Food_ReviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1CA24527D9B05800D88A5E /* UCSD_Food_ReviewUITestsLaunchTests.swift */; };
+		628F9E05B53EDA894A305880 /* Pods_UCSD_Food_Review.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DF63E875B7C826D18B9395 /* Pods_UCSD_Food_Review.framework */; };
+		A216594C53372243F666C967 /* Pods_UCSD_Food_Review_UCSD_Food_ReviewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCF1A8B908419BCB8653EAA /* Pods_UCSD_Food_Review_UCSD_Food_ReviewUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C1CA23627D9B05800D88A5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C1CA21727D9B05400D88A5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C1CA21E27D9B05400D88A5E;
+			remoteInfo = "UCSD Food Review";
+		};
+		4C1CA24027D9B05800D88A5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C1CA21727D9B05400D88A5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C1CA21E27D9B05400D88A5E;
+			remoteInfo = "UCSD Food Review";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D88DA803DC50D823B9D8312 /* Pods-UCSD Food Review.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCSD Food Review.debug.xcconfig"; path = "Target Support Files/Pods-UCSD Food Review/Pods-UCSD Food Review.debug.xcconfig"; sourceTree = "<group>"; };
+		42B9F17B6C2979CE20BEE125 /* Pods-UCSD Food Review-UCSD Food ReviewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCSD Food Review-UCSD Food ReviewUITests.release.xcconfig"; path = "Target Support Files/Pods-UCSD Food Review-UCSD Food ReviewUITests/Pods-UCSD Food Review-UCSD Food ReviewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4C1CA21F27D9B05400D88A5E /* UCSD Food Review.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UCSD Food Review.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C1CA22227D9B05400D88A5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C1CA22427D9B05400D88A5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4C1CA22627D9B05400D88A5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C1CA22927D9B05500D88A5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C1CA22B27D9B05800D88A5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C1CA22E27D9B05800D88A5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C1CA23027D9B05800D88A5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C1CA23527D9B05800D88A5E /* UCSD Food ReviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UCSD Food ReviewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C1CA23927D9B05800D88A5E /* UCSD_Food_ReviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCSD_Food_ReviewTests.swift; sourceTree = "<group>"; };
+		4C1CA23F27D9B05800D88A5E /* UCSD Food ReviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UCSD Food ReviewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C1CA24327D9B05800D88A5E /* UCSD_Food_ReviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCSD_Food_ReviewUITests.swift; sourceTree = "<group>"; };
+		4C1CA24527D9B05800D88A5E /* UCSD_Food_ReviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCSD_Food_ReviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6DCF1A8B908419BCB8653EAA /* Pods_UCSD_Food_Review_UCSD_Food_ReviewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UCSD_Food_Review_UCSD_Food_ReviewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B13266F51B232CA19856571C /* Pods_UCSD_Food_ReviewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UCSD_Food_ReviewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2AC889BEB56A9CA2EA39B1A /* Pods-UCSD Food ReviewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCSD Food ReviewTests.debug.xcconfig"; path = "Target Support Files/Pods-UCSD Food ReviewTests/Pods-UCSD Food ReviewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B70FA4FDCF48A0606E40B3F9 /* Pods-UCSD Food Review.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCSD Food Review.release.xcconfig"; path = "Target Support Files/Pods-UCSD Food Review/Pods-UCSD Food Review.release.xcconfig"; sourceTree = "<group>"; };
+		C119528A32B63B565AF8F6E2 /* Pods-UCSD Food ReviewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCSD Food ReviewTests.release.xcconfig"; path = "Target Support Files/Pods-UCSD Food ReviewTests/Pods-UCSD Food ReviewTests.release.xcconfig"; sourceTree = "<group>"; };
+		D9DF63E875B7C826D18B9395 /* Pods_UCSD_Food_Review.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UCSD_Food_Review.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F937007D44B744A82872B84A /* Pods-UCSD Food Review-UCSD Food ReviewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCSD Food Review-UCSD Food ReviewUITests.debug.xcconfig"; path = "Target Support Files/Pods-UCSD Food Review-UCSD Food ReviewUITests/Pods-UCSD Food Review-UCSD Food ReviewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C1CA21C27D9B05400D88A5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				628F9E05B53EDA894A305880 /* Pods_UCSD_Food_Review.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C1CA23227D9B05800D88A5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C0C65B51A87CF905746605F /* Pods_UCSD_Food_ReviewTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C1CA23C27D9B05800D88A5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A216594C53372243F666C967 /* Pods_UCSD_Food_Review_UCSD_Food_ReviewUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C1CA21627D9B05400D88A5E = {
+			isa = PBXGroup;
+			children = (
+				4C1CA22127D9B05400D88A5E /* UCSD Food Review */,
+				4C1CA23827D9B05800D88A5E /* UCSD Food ReviewTests */,
+				4C1CA24227D9B05800D88A5E /* UCSD Food ReviewUITests */,
+				4C1CA22027D9B05400D88A5E /* Products */,
+				B2D43B44EF2466753A74A1F4 /* Pods */,
+				5E19D0C35D964F6E52C66B05 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C1CA22027D9B05400D88A5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C1CA21F27D9B05400D88A5E /* UCSD Food Review.app */,
+				4C1CA23527D9B05800D88A5E /* UCSD Food ReviewTests.xctest */,
+				4C1CA23F27D9B05800D88A5E /* UCSD Food ReviewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C1CA22127D9B05400D88A5E /* UCSD Food Review */ = {
+			isa = PBXGroup;
+			children = (
+				4C1CA22227D9B05400D88A5E /* AppDelegate.swift */,
+				4C1CA22427D9B05400D88A5E /* SceneDelegate.swift */,
+				4C1CA22627D9B05400D88A5E /* ViewController.swift */,
+				4C1CA22827D9B05500D88A5E /* Main.storyboard */,
+				4C1CA22B27D9B05800D88A5E /* Assets.xcassets */,
+				4C1CA22D27D9B05800D88A5E /* LaunchScreen.storyboard */,
+				4C1CA23027D9B05800D88A5E /* Info.plist */,
+			);
+			path = "UCSD Food Review";
+			sourceTree = "<group>";
+		};
+		4C1CA23827D9B05800D88A5E /* UCSD Food ReviewTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C1CA23927D9B05800D88A5E /* UCSD_Food_ReviewTests.swift */,
+			);
+			path = "UCSD Food ReviewTests";
+			sourceTree = "<group>";
+		};
+		4C1CA24227D9B05800D88A5E /* UCSD Food ReviewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4C1CA24327D9B05800D88A5E /* UCSD_Food_ReviewUITests.swift */,
+				4C1CA24527D9B05800D88A5E /* UCSD_Food_ReviewUITestsLaunchTests.swift */,
+			);
+			path = "UCSD Food ReviewUITests";
+			sourceTree = "<group>";
+		};
+		5E19D0C35D964F6E52C66B05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9DF63E875B7C826D18B9395 /* Pods_UCSD_Food_Review.framework */,
+				6DCF1A8B908419BCB8653EAA /* Pods_UCSD_Food_Review_UCSD_Food_ReviewUITests.framework */,
+				B13266F51B232CA19856571C /* Pods_UCSD_Food_ReviewTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2D43B44EF2466753A74A1F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D88DA803DC50D823B9D8312 /* Pods-UCSD Food Review.debug.xcconfig */,
+				B70FA4FDCF48A0606E40B3F9 /* Pods-UCSD Food Review.release.xcconfig */,
+				F937007D44B744A82872B84A /* Pods-UCSD Food Review-UCSD Food ReviewUITests.debug.xcconfig */,
+				42B9F17B6C2979CE20BEE125 /* Pods-UCSD Food Review-UCSD Food ReviewUITests.release.xcconfig */,
+				B2AC889BEB56A9CA2EA39B1A /* Pods-UCSD Food ReviewTests.debug.xcconfig */,
+				C119528A32B63B565AF8F6E2 /* Pods-UCSD Food ReviewTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C1CA21E27D9B05400D88A5E /* UCSD Food Review */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C1CA24927D9B05800D88A5E /* Build configuration list for PBXNativeTarget "UCSD Food Review" */;
+			buildPhases = (
+				B69281362EE21602DDA7B48F /* [CP] Check Pods Manifest.lock */,
+				4C1CA21B27D9B05400D88A5E /* Sources */,
+				4C1CA21C27D9B05400D88A5E /* Frameworks */,
+				4C1CA21D27D9B05400D88A5E /* Resources */,
+				7F328C4523D8EBF8845521DA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UCSD Food Review";
+			productName = "UCSD Food Review";
+			productReference = 4C1CA21F27D9B05400D88A5E /* UCSD Food Review.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C1CA23427D9B05800D88A5E /* UCSD Food ReviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C1CA24C27D9B05800D88A5E /* Build configuration list for PBXNativeTarget "UCSD Food ReviewTests" */;
+			buildPhases = (
+				50064C06E237005BB1673447 /* [CP] Check Pods Manifest.lock */,
+				4C1CA23127D9B05800D88A5E /* Sources */,
+				4C1CA23227D9B05800D88A5E /* Frameworks */,
+				4C1CA23327D9B05800D88A5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C1CA23727D9B05800D88A5E /* PBXTargetDependency */,
+			);
+			name = "UCSD Food ReviewTests";
+			productName = "UCSD Food ReviewTests";
+			productReference = 4C1CA23527D9B05800D88A5E /* UCSD Food ReviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C1CA23E27D9B05800D88A5E /* UCSD Food ReviewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C1CA24F27D9B05800D88A5E /* Build configuration list for PBXNativeTarget "UCSD Food ReviewUITests" */;
+			buildPhases = (
+				A2603F4BE7EA8C81C2EF7FF1 /* [CP] Check Pods Manifest.lock */,
+				4C1CA23B27D9B05800D88A5E /* Sources */,
+				4C1CA23C27D9B05800D88A5E /* Frameworks */,
+				4C1CA23D27D9B05800D88A5E /* Resources */,
+				7C85A9A6BBB60D8405198F98 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C1CA24127D9B05800D88A5E /* PBXTargetDependency */,
+			);
+			name = "UCSD Food ReviewUITests";
+			productName = "UCSD Food ReviewUITests";
+			productReference = 4C1CA23F27D9B05800D88A5E /* UCSD Food ReviewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C1CA21727D9B05400D88A5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					4C1CA21E27D9B05400D88A5E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					4C1CA23427D9B05800D88A5E = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 4C1CA21E27D9B05400D88A5E;
+					};
+					4C1CA23E27D9B05800D88A5E = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 4C1CA21E27D9B05400D88A5E;
+					};
+				};
+			};
+			buildConfigurationList = 4C1CA21A27D9B05400D88A5E /* Build configuration list for PBXProject "UCSD Food Review" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C1CA21627D9B05400D88A5E;
+			productRefGroup = 4C1CA22027D9B05400D88A5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C1CA21E27D9B05400D88A5E /* UCSD Food Review */,
+				4C1CA23427D9B05800D88A5E /* UCSD Food ReviewTests */,
+				4C1CA23E27D9B05800D88A5E /* UCSD Food ReviewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C1CA21D27D9B05400D88A5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1CA22F27D9B05800D88A5E /* LaunchScreen.storyboard in Resources */,
+				4C1CA22C27D9B05800D88A5E /* Assets.xcassets in Resources */,
+				4C1CA22A27D9B05500D88A5E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C1CA23327D9B05800D88A5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C1CA23D27D9B05800D88A5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50064C06E237005BB1673447 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UCSD Food ReviewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C85A9A6BBB60D8405198F98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UCSD Food Review-UCSD Food ReviewUITests/Pods-UCSD Food Review-UCSD Food ReviewUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UCSD Food Review-UCSD Food ReviewUITests/Pods-UCSD Food Review-UCSD Food ReviewUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UCSD Food Review-UCSD Food ReviewUITests/Pods-UCSD Food Review-UCSD Food ReviewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F328C4523D8EBF8845521DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UCSD Food Review/Pods-UCSD Food Review-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UCSD Food Review/Pods-UCSD Food Review-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UCSD Food Review/Pods-UCSD Food Review-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2603F4BE7EA8C81C2EF7FF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UCSD Food Review-UCSD Food ReviewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B69281362EE21602DDA7B48F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UCSD Food Review-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C1CA21B27D9B05400D88A5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1CA22727D9B05400D88A5E /* ViewController.swift in Sources */,
+				4C1CA22327D9B05400D88A5E /* AppDelegate.swift in Sources */,
+				4C1CA22527D9B05400D88A5E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C1CA23127D9B05800D88A5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1CA23A27D9B05800D88A5E /* UCSD_Food_ReviewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C1CA23B27D9B05800D88A5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1CA24427D9B05800D88A5E /* UCSD_Food_ReviewUITests.swift in Sources */,
+				4C1CA24627D9B05800D88A5E /* UCSD_Food_ReviewUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C1CA23727D9B05800D88A5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C1CA21E27D9B05400D88A5E /* UCSD Food Review */;
+			targetProxy = 4C1CA23627D9B05800D88A5E /* PBXContainerItemProxy */;
+		};
+		4C1CA24127D9B05800D88A5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C1CA21E27D9B05400D88A5E /* UCSD Food Review */;
+			targetProxy = 4C1CA24027D9B05800D88A5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C1CA22827D9B05500D88A5E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C1CA22927D9B05500D88A5E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C1CA22D27D9B05800D88A5E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C1CA22E27D9B05800D88A5E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C1CA24727D9B05800D88A5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C1CA24827D9B05800D88A5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C1CA24A27D9B05800D88A5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D88DA803DC50D823B9D8312 /* Pods-UCSD Food Review.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "UCSD Food Review/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.UCSDFoodReview.UCSD-Food-Review";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C1CA24B27D9B05800D88A5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B70FA4FDCF48A0606E40B3F9 /* Pods-UCSD Food Review.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "UCSD Food Review/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.UCSDFoodReview.UCSD-Food-Review";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4C1CA24D27D9B05800D88A5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2AC889BEB56A9CA2EA39B1A /* Pods-UCSD Food ReviewTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.UCSDFoodReview.UCSD-Food-ReviewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UCSD Food Review.app/UCSD Food Review";
+			};
+			name = Debug;
+		};
+		4C1CA24E27D9B05800D88A5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C119528A32B63B565AF8F6E2 /* Pods-UCSD Food ReviewTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.UCSDFoodReview.UCSD-Food-ReviewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UCSD Food Review.app/UCSD Food Review";
+			};
+			name = Release;
+		};
+		4C1CA25027D9B05800D88A5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F937007D44B744A82872B84A /* Pods-UCSD Food Review-UCSD Food ReviewUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.UCSDFoodReview.UCSD-Food-ReviewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UCSD Food Review";
+			};
+			name = Debug;
+		};
+		4C1CA25127D9B05800D88A5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42B9F17B6C2979CE20BEE125 /* Pods-UCSD Food Review-UCSD Food ReviewUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.UCSDFoodReview.UCSD-Food-ReviewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UCSD Food Review";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C1CA21A27D9B05400D88A5E /* Build configuration list for PBXProject "UCSD Food Review" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C1CA24727D9B05800D88A5E /* Debug */,
+				4C1CA24827D9B05800D88A5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C1CA24927D9B05800D88A5E /* Build configuration list for PBXNativeTarget "UCSD Food Review" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C1CA24A27D9B05800D88A5E /* Debug */,
+				4C1CA24B27D9B05800D88A5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C1CA24C27D9B05800D88A5E /* Build configuration list for PBXNativeTarget "UCSD Food ReviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C1CA24D27D9B05800D88A5E /* Debug */,
+				4C1CA24E27D9B05800D88A5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C1CA24F27D9B05800D88A5E /* Build configuration list for PBXNativeTarget "UCSD Food ReviewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C1CA25027D9B05800D88A5E /* Debug */,
+				4C1CA25127D9B05800D88A5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C1CA21727D9B05400D88A5E /* Project object */;
+}

@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'UCSD Food Review' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for UCSD Food Review
+	pod 'Parse'
+ 	pod 'AlamofireImage'
+
+
+  target 'UCSD Food ReviewTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'UCSD Food ReviewUITests' do
+    # Pods for testing
+  end
+
+end
