@@ -18,7 +18,7 @@ Original App Design Project - README Template
  review.]
 
 ### App Evaluation
-- **Category: Food / Lifestylezz**
+- **Category: Food / Lifestyle**
 - **Mobile: Focused mainly towards mobile use. Harder to submit reviews with photos on a computer.**
 - **Story: Allows students to see reviews of different food choices at each dining hall so they can choose better meals.**
 - **Market: Mainly targeted towards UCSD students, as they purchase food from the dining halls the most often.**
