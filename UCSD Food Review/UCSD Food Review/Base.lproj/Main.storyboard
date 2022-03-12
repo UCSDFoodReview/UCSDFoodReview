@@ -29,7 +29,7 @@
                                 <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                 <color key="highlightedColor" systemColor="opaqueSeparatorColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cey-hV-kzB">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Johnny Appleseed" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cey-hV-kzB">
                                 <rect key="frame" x="16" y="240" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -41,7 +41,7 @@
                                 <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                 <color key="highlightedColor" systemColor="opaqueSeparatorColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QSr-cW-JEY">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="john@example.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QSr-cW-JEY">
                                 <rect key="frame" x="16" y="334" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -78,6 +78,9 @@
                                 <rect key="frame" x="169" y="565" width="76" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                <connections>
+                                    <segue destination="1Z9-zM-59l" kind="presentation" identifier="toLoginSegue" id="jh0-TH-lyj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -117,7 +120,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Aj8-jU-x06"/>
                     <connections>
-                        <segue destination="1Z9-zM-59l" kind="presentation" identifier="signUpToLoginSegue" id="x2g-9q-1Mb"/>
+                        <outlet property="fullNameField" destination="Cey-hV-kzB" id="RbZ-mW-3up"/>
+                        <outlet property="signupEmailField" destination="QSr-cW-JEY" id="Nbd-Cx-b4w"/>
+                        <outlet property="signupPassField" destination="bOl-PU-6xh" id="3Qp-ll-v1l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -139,7 +144,7 @@
                                 <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                 <color key="highlightedColor" systemColor="opaqueSeparatorColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nvr-1r-gVc">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="john@example.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nvr-1r-gVc">
                                 <rect key="frame" x="16" y="273" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -182,6 +187,9 @@
                                 <rect key="frame" x="160" y="523" width="94" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                <connections>
+                                    <segue destination="1Fn-Ye-f20" kind="presentation" id="i0P-yo-czC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="r5g-AD-oLL"/>
@@ -214,9 +222,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OIG-YF-dnJ"/>
-                    <connections>
-                        <segue destination="1Fn-Ye-f20" kind="presentation" identifier="onLoginToSignupSegue" id="MZr-nL-KN6"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiV-8E-WuZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -245,12 +250,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1LQ-iw-86U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5437.68115942029" y="83.705357142857139"/>
+            <point key="canvasLocation" x="2245" y="986"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Login Navigation Controller-->
         <scene sceneID="3Ze-ie-IKQ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Z9-zM-59l" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Z9-zM-59l" userLabel="Login Navigation Controller" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jb3-HO-hM8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -265,10 +270,10 @@
             </objects>
             <point key="canvasLocation" x="1795.6521739130437" y="83.705357142857139"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Signup Navigation Controller-->
         <scene sceneID="B3F-Ov-4IU">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Fn-Ye-f20" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Fn-Ye-f20" userLabel="Signup Navigation Controller" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fFZ-Jh-hiz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -283,10 +288,10 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Dining Hall Navigation Controller-->
         <scene sceneID="1ez-fG-VwP">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nYw-Ft-WGp" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nYw-Ft-WGp" userLabel="Dining Hall Navigation Controller" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e6W-t7-IsP">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -299,7 +304,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLR-vo-fku" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4541" y="84"/>
+            <point key="canvasLocation" x="1348" y="986"/>
         </scene>
     </scenes>
     <resources>
