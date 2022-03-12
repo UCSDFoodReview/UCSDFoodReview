@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1C0C65B51A87CF905746605F /* Pods_UCSD_Food_ReviewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B13266F51B232CA19856571C /* Pods_UCSD_Food_ReviewTests.framework */; };
+		3BB3042427DC54F7008518DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB3042327DC54F7008518DC /* LoginViewController.swift */; };
+		3BB3042627DC5520008518DC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB3042527DC5520008518DC /* SignUpViewController.swift */; };
 		4C1CA22327D9B05400D88A5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1CA22227D9B05400D88A5E /* AppDelegate.swift */; };
 		4C1CA22527D9B05400D88A5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1CA22427D9B05400D88A5E /* SceneDelegate.swift */; };
 		4C1CA22727D9B05400D88A5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1CA22627D9B05400D88A5E /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3BB3042327DC54F7008518DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3BB3042527DC5520008518DC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3D88DA803DC50D823B9D8312 /* Pods-UCSD Food Review.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCSD Food Review.debug.xcconfig"; path = "Target Support Files/Pods-UCSD Food Review/Pods-UCSD Food Review.debug.xcconfig"; sourceTree = "<group>"; };
 		42B9F17B6C2979CE20BEE125 /* Pods-UCSD Food Review-UCSD Food ReviewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCSD Food Review-UCSD Food ReviewUITests.release.xcconfig"; path = "Target Support Files/Pods-UCSD Food Review-UCSD Food ReviewUITests/Pods-UCSD Food Review-UCSD Food ReviewUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4C1CA21F27D9B05400D88A5E /* UCSD Food Review.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UCSD Food Review.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +127,8 @@
 				4C1CA22B27D9B05800D88A5E /* Assets.xcassets */,
 				4C1CA22D27D9B05800D88A5E /* LaunchScreen.storyboard */,
 				4C1CA23027D9B05800D88A5E /* Info.plist */,
+				3BB3042327DC54F7008518DC /* LoginViewController.swift */,
+				3BB3042527DC5520008518DC /* SignUpViewController.swift */,
 			);
 			path = "UCSD Food Review";
 			sourceTree = "<group>";
@@ -164,7 +170,6 @@
 				B2AC889BEB56A9CA2EA39B1A /* Pods-UCSD Food ReviewTests.debug.xcconfig */,
 				C119528A32B63B565AF8F6E2 /* Pods-UCSD Food ReviewTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -407,9 +412,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BB3042427DC54F7008518DC /* LoginViewController.swift in Sources */,
 				4C1CA22727D9B05400D88A5E /* ViewController.swift in Sources */,
 				4C1CA22327D9B05400D88A5E /* AppDelegate.swift in Sources */,
 				4C1CA22527D9B05400D88A5E /* SceneDelegate.swift in Sources */,
+				3BB3042627DC5520008518DC /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
