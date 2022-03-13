@@ -75,7 +75,7 @@ Original App Design Project - README Template
 
 ### 3. Navigation
 
-**Tab Navigation** (Tab to Screen)
+**Tab Navigation** (Tab to Screen) (Optional)
 
 * Home/Food
 * Profile
