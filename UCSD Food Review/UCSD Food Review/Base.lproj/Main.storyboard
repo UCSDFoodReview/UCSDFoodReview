@@ -136,7 +136,7 @@
         <!--Login View Controller-->
         <scene sceneID="Ftn-RK-cPl">
             <objects>
-                <viewController id="JcA-KZ-Gzt" customClass="LoginViewController" customModule="UCSD_Food_Review" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="JcA-KZ-Gzt" customClass="LoginViewController" customModule="UCSD_Food_Review" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5mo-kX-7OM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -258,7 +258,13 @@
                         <viewLayoutGuide key="safeArea" id="gS1-Z3-nxk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="aHp-2B-zpe"/>
+                    <navigationItem key="navigationItem" id="aHp-2B-zpe">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="cZc-hD-n6c">
+                            <connections>
+                                <action selector="onLogout:" destination="OLj-bw-H4u" id="ZU7-pI-5Jd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1LQ-iw-86U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -303,7 +309,7 @@
         <!--Dining Hall Navigation Controller-->
         <scene sceneID="1ez-fG-VwP">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nYw-Ft-WGp" userLabel="Dining Hall Navigation Controller" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DiningHallNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="nYw-Ft-WGp" userLabel="Dining Hall Navigation Controller" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e6W-t7-IsP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
