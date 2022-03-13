@@ -6,9 +6,21 @@
 //
 
 import UIKit
+import Parse
 
 class LoginViewController: UIViewController {
 
+    /*
+     Outlets:
+     loginEmailField: existing user's email
+     loginPassField: existing user's password
+     */
+    
+    @IBOutlet weak var loginUsernameField: UITextField!
+    
+    @IBOutlet weak var loginPassField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,4 +38,22 @@ class LoginViewController: UIViewController {
     }
     */
 
+    
+    @IBAction func onLogin(_ sender: Any) {
+        let username = loginUsernameField.text!
+        let password = loginPassField.text!
+        
+        PFUser.logInWithUsername(inBackground: username, password: password) {
+            (user, error) in
+            if user != nil {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            } else {
+                print("Error: \(error?.localizedDescription)")
+            }
+        }
+        
+        
+    }
+    
+    
 }
