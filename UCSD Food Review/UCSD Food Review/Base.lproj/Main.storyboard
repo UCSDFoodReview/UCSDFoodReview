@@ -32,7 +32,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Johnny Appleseed" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cey-hV-kzB">
                                 <rect key="frame" x="16" y="240" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Nk-60-Bn4">
                                 <rect key="frame" x="16" y="302" width="382" height="24"/>
@@ -44,7 +44,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="triton" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QSr-cW-JEY">
                                 <rect key="frame" x="16" y="334" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IsO-9J-AQK">
                                 <rect key="frame" x="16" y="376" width="382" height="24"/>
@@ -56,7 +56,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bOl-PU-6xh">
                                 <rect key="frame" x="16" y="408" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdL-Pp-yAs">
                                 <rect key="frame" x="108" y="480" width="198" height="31"/>
@@ -136,7 +136,7 @@
         <!--Login View Controller-->
         <scene sceneID="Ftn-RK-cPl">
             <objects>
-                <viewController id="JcA-KZ-Gzt" customClass="LoginViewController" customModule="UCSD_Food_Review" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="JcA-KZ-Gzt" customClass="LoginViewController" customModule="UCSD_Food_Review" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5mo-kX-7OM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,7 +151,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="triton" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nvr-1r-gVc">
                                 <rect key="frame" x="16" y="273" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahO-x3-xfy">
                                 <rect key="frame" x="16" y="335" width="382" height="24"/>
@@ -163,7 +163,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v6H-X0-aWU">
                                 <rect key="frame" x="16" y="367" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNq-pg-73J">
                                 <rect key="frame" x="16" y="136" width="382" height="43"/>
@@ -258,7 +258,13 @@
                         <viewLayoutGuide key="safeArea" id="gS1-Z3-nxk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="aHp-2B-zpe"/>
+                    <navigationItem key="navigationItem" id="aHp-2B-zpe">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="cZc-hD-n6c">
+                            <connections>
+                                <action selector="onLogout:" destination="OLj-bw-H4u" id="ZU7-pI-5Jd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1LQ-iw-86U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -303,7 +309,7 @@
         <!--Dining Hall Navigation Controller-->
         <scene sceneID="1ez-fG-VwP">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nYw-Ft-WGp" userLabel="Dining Hall Navigation Controller" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DiningHallNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="nYw-Ft-WGp" userLabel="Dining Hall Navigation Controller" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e6W-t7-IsP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -320,7 +326,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rr0-2i-Cai"/>
+        <segue reference="j6X-sk-1Of"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="opaqueSeparatorColor">
