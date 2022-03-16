@@ -177,3 +177,6 @@ Original App Design Project - README Template
      - (Update/PUT) Change their password
      - (Update/PUT) Change their profile picture
      - (Read/GET) Show total karma (optional)
+
+![sprint1gif](https://user-images.githubusercontent.com/65835856/158520287-f5fbd7f9-8d0f-4982-b880-859e91167a19.gif)
+
