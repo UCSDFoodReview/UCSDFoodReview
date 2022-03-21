@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class RatingsCell: UITableViewCell {
 
     @IBOutlet weak var userProfileImage: UIImageView!

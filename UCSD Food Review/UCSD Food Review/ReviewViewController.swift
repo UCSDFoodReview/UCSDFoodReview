@@ -6,16 +6,24 @@
 //
 
 import UIKit
+import Cosmos
 
 class ReviewViewController: UIViewController {
-
+    @IBOutlet weak var foodImage: UIImageView!
+    @IBOutlet weak var restaurantName: UILabel!
+    @IBOutlet weak var reviewText: UITextField!
+    @IBOutlet weak var foodName: UILabel!
+    @IBOutlet weak var starRating: CosmosView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        starRating.settings.disablePanGestures = true
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func onSubmit(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 

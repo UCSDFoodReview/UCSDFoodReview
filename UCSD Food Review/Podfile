@@ -8,6 +8,7 @@ target 'UCSD Food Review' do
   # Pods for UCSD Food Review
 	pod 'Parse'
  	pod 'AlamofireImage'
+	pod 'Cosmos', '~> 23.0'
 
 
   target 'UCSD Food ReviewTests' do
@@ -18,5 +19,4 @@ target 'UCSD Food Review' do
   target 'UCSD Food ReviewUITests' do
     # Pods for testing
   end
-
 end
