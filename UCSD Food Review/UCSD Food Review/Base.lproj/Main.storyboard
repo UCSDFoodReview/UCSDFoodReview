@@ -270,8 +270,8 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Located At" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sl-fH-W3Y">
-                                                            <rect key="frame" x="31" y="218" width="74" height="18"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sl-fH-W3Y">
+                                                            <rect key="frame" x="31" y="218" width="92" height="18"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <nil key="textColor"/>
@@ -287,9 +287,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="diningHallImage" destination="bah-Zr-U1o" id="QMI-EC-UXm"/>
-                                            <outlet property="diningHallLocation" destination="7sl-fH-W3Y" id="khy-Zg-JYg"/>
-                                            <outlet property="diningHallName" destination="5NM-MG-K4b" id="ShV-6T-TzE"/>
+                                            <outlet property="diningHallDescription" destination="7sl-fH-W3Y" id="VS3-Tp-bK8"/>
+                                            <outlet property="diningHallImage" destination="bah-Zr-U1o" id="SYM-Uh-02r"/>
+                                            <outlet property="diningHallName" destination="5NM-MG-K4b" id="U1W-QN-HTL"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -305,6 +305,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="ICo-B5-sNm" id="Gg7-MX-2mV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1LQ-iw-86U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

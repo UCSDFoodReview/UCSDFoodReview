@@ -9,9 +9,11 @@ import UIKit
 
 class DiningHallCell: UITableViewCell {
 
+    
     @IBOutlet weak var diningHallImage: UIImageView!
     @IBOutlet weak var diningHallName: UILabel!
-    @IBOutlet weak var diningHallLocation: UILabel!
+    @IBOutlet weak var diningHallDescription: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
