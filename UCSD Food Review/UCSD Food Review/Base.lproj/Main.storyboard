@@ -259,37 +259,41 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="266"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XgF-xd-gbO">
-                                                    <rect key="frame" x="20" y="10.5" width="374" height="244"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NM-MG-K4b">
-                                                            <rect key="frame" x="31" y="195" width="317" height="26"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sl-fH-W3Y">
-                                                            <rect key="frame" x="31" y="218" width="92" height="18"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bah-Zr-U1o">
-                                                            <rect key="frame" x="0.0" y="8" width="374" height="179"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        </imageView>
-                                                    </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezL-Bu-fuV">
+                                                    <rect key="frame" x="51" y="205.5" width="317" height="26"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khX-fO-SMl">
+                                                    <rect key="frame" x="51" y="228.5" width="91.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ge1-PN-W8s">
+                                                    <rect key="frame" x="20" y="18.5" width="374" height="179"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Ge1-PN-W8s" secondAttribute="height" multiplier="374:179" id="Ong-1q-NUy"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ezL-Bu-fuV" firstAttribute="leading" secondItem="aoH-JV-0fX" secondAttribute="leadingMargin" constant="31" id="2xv-BK-adD"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ezL-Bu-fuV" secondAttribute="trailing" constant="26" id="4B9-mW-ah7"/>
+                                                <constraint firstItem="khX-fO-SMl" firstAttribute="top" secondItem="Ge1-PN-W8s" secondAttribute="bottom" constant="31" id="FQT-Nc-Vcj"/>
+                                                <constraint firstItem="ezL-Bu-fuV" firstAttribute="top" secondItem="Ge1-PN-W8s" secondAttribute="bottom" constant="8" symbolic="YES" id="HPY-ln-hgI"/>
+                                                <constraint firstItem="Ge1-PN-W8s" firstAttribute="top" secondItem="aoH-JV-0fX" secondAttribute="topMargin" constant="7.5" id="Hen-PX-Kou"/>
+                                                <constraint firstItem="Ge1-PN-W8s" firstAttribute="trailing" secondItem="aoH-JV-0fX" secondAttribute="trailingMargin" id="S2E-g3-bIf"/>
+                                                <constraint firstItem="khX-fO-SMl" firstAttribute="leading" secondItem="aoH-JV-0fX" secondAttribute="leadingMargin" constant="31" id="bi0-TK-4Ye"/>
+                                                <constraint firstItem="Ge1-PN-W8s" firstAttribute="leading" secondItem="aoH-JV-0fX" secondAttribute="leadingMargin" id="gHg-GH-leN"/>
+                                                <constraint firstItem="ezL-Bu-fuV" firstAttribute="top" secondItem="Ge1-PN-W8s" secondAttribute="bottom" constant="8" symbolic="YES" id="xKG-Sw-gq3"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="diningHallDescription" destination="7sl-fH-W3Y" id="VS3-Tp-bK8"/>
-                                            <outlet property="diningHallImage" destination="bah-Zr-U1o" id="SYM-Uh-02r"/>
-                                            <outlet property="diningHallName" destination="5NM-MG-K4b" id="U1W-QN-HTL"/>
+                                            <outlet property="diningHallDescription" destination="khX-fO-SMl" id="HLI-9T-DwB"/>
+                                            <outlet property="diningHallImage" destination="Ge1-PN-W8s" id="u5B-CA-jRe"/>
+                                            <outlet property="diningHallName" destination="ezL-Bu-fuV" id="BBa-Br-0Nl"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -306,7 +310,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="tableView" destination="ICo-B5-sNm" id="Gg7-MX-2mV"/>
+                        <outlet property="tableView" destination="ICo-B5-sNm" id="U4n-FB-RB4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1LQ-iw-86U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

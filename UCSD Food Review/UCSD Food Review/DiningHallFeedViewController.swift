@@ -52,10 +52,10 @@ class DiningHallFeedViewController: UIViewController, UITableViewDelegate, UITab
         let cell = tableView.dequeueReusableCell(withIdentifier: "DiningHallCell") as! DiningHallCell
         
         let diningHall = diningHalls[indexPath.row]
-//        cell.diningHallName.text = diningHall["diningHallName"] as? String
-//        cell.diningHallDescription.text = diningHall["description"] as? String
-        cell.diningHallName.text = "test!"
-        cell.diningHallDescription.text = "description!"
+        cell.diningHallName.text = diningHall["diningHallName"] as? String
+        cell.diningHallDescription.text = diningHall["description"] as? String
+//        cell.diningHallName.text = "test!"
+//        cell.diningHallDescription.text = "description!"
         
         print(diningHall)
         return cell
