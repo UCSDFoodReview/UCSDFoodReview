@@ -21,7 +21,7 @@ class DiningHallFeedViewController: UIViewController, UITableViewDelegate, UITab
         
         tableView.delegate = self
         tableView.dataSource = self
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -40,8 +40,6 @@ class DiningHallFeedViewController: UIViewController, UITableViewDelegate, UITab
                 print("Error: \(error)")
             }
         }
-        
-        print("this ran!")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -57,7 +55,13 @@ class DiningHallFeedViewController: UIViewController, UITableViewDelegate, UITab
 //        cell.diningHallName.text = "test!"
 //        cell.diningHallDescription.text = "description!"
         
-        print(diningHall)
+        cell.diningHallName.text = "test"
+        cell.diningHallDescription.text = "test desc"
+        
+        let testName = diningHall["diningHallName"] as? String
+        print(testName)
+        
+        
         return cell
     }
     
