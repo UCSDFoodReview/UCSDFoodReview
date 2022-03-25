@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Fn-Ye-f20">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Fn-Ye-f20">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -252,42 +252,44 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiningHallCell" rowHeight="266" id="aO6-Vg-RxB" customClass="DiningHallCell" customModule="UCSD_Food_Review" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="266"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiningHallCell" id="aO6-Vg-RxB" customClass="DiningHallCell" customModule="UCSD_Food_Review" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="266.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aO6-Vg-RxB" id="aoH-JV-0fX">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="266"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="266.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezL-Bu-fuV">
-                                                    <rect key="frame" x="51" y="205.5" width="317" height="26"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezL-Bu-fuV">
+                                                    <rect key="frame" x="22" y="204.5" width="52.5" height="26"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khX-fO-SMl">
-                                                    <rect key="frame" x="51" y="228.5" width="91.5" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Description..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khX-fO-SMl">
+                                                    <rect key="frame" x="22" y="231.5" width="370" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ge1-PN-W8s">
-                                                    <rect key="frame" x="20" y="18.5" width="374" height="179"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ge1-PN-W8s">
+                                                    <rect key="frame" x="20" y="18.5" width="374" height="178"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="Ge1-PN-W8s" secondAttribute="height" multiplier="374:179" id="Ong-1q-NUy"/>
+                                                        <constraint firstAttribute="height" constant="178" id="8kN-Cu-hER"/>
+                                                        <constraint firstAttribute="width" constant="374" id="DDB-VZ-dJs"/>
+                                                        <constraint firstAttribute="width" secondItem="Ge1-PN-W8s" secondAttribute="height" multiplier="187:89" id="DLI-WS-qqC"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ezL-Bu-fuV" firstAttribute="leading" secondItem="aoH-JV-0fX" secondAttribute="leadingMargin" constant="31" id="2xv-BK-adD"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="ezL-Bu-fuV" secondAttribute="trailing" constant="26" id="4B9-mW-ah7"/>
-                                                <constraint firstItem="khX-fO-SMl" firstAttribute="top" secondItem="Ge1-PN-W8s" secondAttribute="bottom" constant="31" id="FQT-Nc-Vcj"/>
-                                                <constraint firstItem="ezL-Bu-fuV" firstAttribute="top" secondItem="Ge1-PN-W8s" secondAttribute="bottom" constant="8" symbolic="YES" id="HPY-ln-hgI"/>
-                                                <constraint firstItem="Ge1-PN-W8s" firstAttribute="top" secondItem="aoH-JV-0fX" secondAttribute="topMargin" constant="7.5" id="Hen-PX-Kou"/>
-                                                <constraint firstItem="Ge1-PN-W8s" firstAttribute="trailing" secondItem="aoH-JV-0fX" secondAttribute="trailingMargin" id="S2E-g3-bIf"/>
-                                                <constraint firstItem="khX-fO-SMl" firstAttribute="leading" secondItem="aoH-JV-0fX" secondAttribute="leadingMargin" constant="31" id="bi0-TK-4Ye"/>
-                                                <constraint firstItem="Ge1-PN-W8s" firstAttribute="leading" secondItem="aoH-JV-0fX" secondAttribute="leadingMargin" id="gHg-GH-leN"/>
-                                                <constraint firstItem="ezL-Bu-fuV" firstAttribute="top" secondItem="Ge1-PN-W8s" secondAttribute="bottom" constant="8" symbolic="YES" id="xKG-Sw-gq3"/>
+                                                <constraint firstItem="Ge1-PN-W8s" firstAttribute="leading" secondItem="aoH-JV-0fX" secondAttribute="leadingMargin" id="FL8-kU-NKa"/>
+                                                <constraint firstItem="ezL-Bu-fuV" firstAttribute="leading" secondItem="aoH-JV-0fX" secondAttribute="leadingMargin" constant="2" id="FzF-mR-sSm"/>
+                                                <constraint firstItem="khX-fO-SMl" firstAttribute="leading" secondItem="aoH-JV-0fX" secondAttribute="leadingMargin" constant="2" id="I8Q-If-A1q"/>
+                                                <constraint firstItem="Ge1-PN-W8s" firstAttribute="trailing" secondItem="aoH-JV-0fX" secondAttribute="trailingMargin" id="ODT-sm-uIk"/>
+                                                <constraint firstItem="ezL-Bu-fuV" firstAttribute="top" secondItem="Ge1-PN-W8s" secondAttribute="bottom" constant="8" id="Tsg-FS-GST"/>
+                                                <constraint firstItem="Ge1-PN-W8s" firstAttribute="top" secondItem="aoH-JV-0fX" secondAttribute="topMargin" constant="7.5" id="Tud-T0-wWc"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="khX-fO-SMl" secondAttribute="bottom" constant="5.5" id="e0Y-pi-0H0"/>
+                                                <constraint firstItem="khX-fO-SMl" firstAttribute="top" secondItem="ezL-Bu-fuV" secondAttribute="bottom" constant="1" id="g5w-Ni-pWa"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="khX-fO-SMl" secondAttribute="trailing" constant="2" id="vXR-5d-1r1"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
