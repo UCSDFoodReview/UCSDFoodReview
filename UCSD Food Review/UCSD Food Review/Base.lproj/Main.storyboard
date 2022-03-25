@@ -69,7 +69,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onSignup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mBy-RF-4a3"/>
-                                    <segue destination="nYw-Ft-WGp" kind="presentation" identifier="signupSegue" id="j6X-sk-1Of"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOR-Sh-eT2">
@@ -127,6 +126,7 @@
                         <outlet property="fullNameField" destination="Cey-hV-kzB" id="RbZ-mW-3up"/>
                         <outlet property="signupPassField" destination="bOl-PU-6xh" id="3Qp-ll-v1l"/>
                         <outlet property="signupUsernameField" destination="QSr-cW-JEY" id="Ts6-WS-IaT"/>
+                        <segue destination="nYw-Ft-WGp" kind="presentation" identifier="signupSegue" id="pCu-Qe-FYW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -182,7 +182,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onLogin:" destination="JcA-KZ-Gzt" eventType="touchUpInside" id="9G5-9H-L9V"/>
-                                    <segue destination="nYw-Ft-WGp" kind="presentation" identifier="loginSegue" id="rr0-2i-Cai"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlV-Vg-0du">
@@ -233,6 +232,7 @@
                     <connections>
                         <outlet property="loginPassField" destination="v6H-X0-aWU" id="kUd-Iy-n1N"/>
                         <outlet property="loginUsernameField" destination="nvr-1r-gVc" id="OjA-eJ-UIx"/>
+                        <segue destination="nYw-Ft-WGp" kind="presentation" identifier="loginSuccess" id="gxK-Wd-BEa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiV-8E-WuZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -827,7 +827,8 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="j6X-sk-1Of"/>
+
+        <segue reference="pCu-Qe-FYW"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="star.fill" catalog="system" width="128" height="116"/>
