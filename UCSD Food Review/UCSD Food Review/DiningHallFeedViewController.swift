@@ -7,7 +7,7 @@
 
 import UIKit
 import Parse
-import Alamofire
+import AlamofireImage
 
 class DiningHallFeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -21,7 +21,7 @@ class DiningHallFeedViewController: UIViewController, UITableViewDelegate, UITab
         
         tableView.delegate = self
         tableView.dataSource = self
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -40,8 +40,6 @@ class DiningHallFeedViewController: UIViewController, UITableViewDelegate, UITab
                 print("Error: \(error)")
             }
         }
-        
-        print("this ran!")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -52,12 +50,29 @@ class DiningHallFeedViewController: UIViewController, UITableViewDelegate, UITab
         let cell = tableView.dequeueReusableCell(withIdentifier: "DiningHallCell") as! DiningHallCell
         
         let diningHall = diningHalls[indexPath.row]
-//        cell.diningHallName.text = diningHall["diningHallName"] as? String
-//        cell.diningHallDescription.text = diningHall["description"] as? String
-        cell.diningHallName.text = "test!"
-        cell.diningHallDescription.text = "description!"
         
-        print(diningHall)
+        let name:String = diningHall["diningHallName"] as! String
+        let description:String = diningHall["description"] as! String
+        
+        let imageFile = diningHall["image"] as! PFFileObject
+        let imageURL = imageFile.url!
+        let url = URL(string: imageURL)!
+        cell.diningHallName.text = name
+        cell.diningHallDescription.text = description
+        
+        cell.diningHallImage.af.setImage(withURL: url)
+        
+        cell.diningHallDescription.sizeToFit()
+//        cell.diningHallName.text = "test!"
+//        cell.diningHallDescription.text = "description!"
+        
+    /*    cell.diningHallName.text = "test"
+        cell.diningHallDescription.text = "test desc"
+        
+        let testName = diningHall["diningHallName"] as? String
+        print(testName)
+      */
+        
         return cell
     }
     
