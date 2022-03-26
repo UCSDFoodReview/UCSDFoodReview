@@ -76,6 +76,14 @@ class DiningHallFeedViewController: UIViewController, UITableViewDelegate, UITab
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let diningHall = diningHalls[indexPath.row]
+        
+        let RestaurantsViewController = segue.destination as! RestaurantsFeedViewController
+        RestaurantsViewController.dininghall = diningHall
+    }
     /*
     // MARK: - Navigation
 

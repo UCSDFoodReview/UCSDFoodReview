@@ -6,14 +6,18 @@
 //
 
 import UIKit
+import Parse
 
 class RestaurantsFeedViewController: UIViewController {
+    
+    var dininghall = PFObject(className: "DiningHall")
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
+    
     
 
     /*
