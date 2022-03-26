@@ -7,6 +7,7 @@
 
 import UIKit
 import Cosmos
+import Parse
 
 class ReviewViewController: UIViewController {
     @IBOutlet weak var foodImage: UIImageView!
@@ -23,6 +24,20 @@ class ReviewViewController: UIViewController {
     }
     
     @IBAction func onSubmit(_ sender: Any) {
+        let review = PFObject(className: "Review")
+        
+        review["author"] = PFUser.current()!
+        review["review"] = reviewText.text!
+        review["rating"] = starRating.rating
+        
+        review.saveInBackground { (success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                print("Saved")
+            } else {
+                print("Error!")
+            }
+        }
     }
     /*
     // MARK: - Navigation
