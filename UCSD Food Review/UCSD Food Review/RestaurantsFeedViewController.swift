@@ -53,7 +53,8 @@ class RestaurantsFeedViewController: UIViewController, UITableViewDelegate, UITa
         
         let name:String = restaurant["name"] as! String
         
-        let imageFile = restaurant["diningHall"]["image"] as! PFFileObject
+      
+        let imageFile = dininghall["image"] as! PFFileObject
         let imageURL = imageFile.url!
         let url = URL(string: imageURL)!
         cell.restaurantImage.af.setImage(withURL: url)
