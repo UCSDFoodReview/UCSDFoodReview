@@ -345,13 +345,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toasted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyv-aM-CDe" userLabel="restaurantName">
-                                                    <rect key="frame" x="22" y="199" width="370" height="26"/>
+                                                    <rect key="frame" x="22" y="200" width="370" height="25"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bva-6r-Omd" userLabel="restaurantImage">
-                                                    <rect key="frame" x="22" y="16" width="374" height="178"/>
+                                                    <rect key="frame" x="22" y="17" width="374" height="178"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="178" id="A6N-X3-tt7"/>
                                                         <constraint firstAttribute="width" constant="374" id="Fhn-vy-7H8"/>
@@ -364,7 +364,7 @@
                                                 <constraint firstItem="xyv-aM-CDe" firstAttribute="top" secondItem="bva-6r-Omd" secondAttribute="bottom" constant="5" id="0Qb-Dk-idc"/>
                                                 <constraint firstItem="bva-6r-Omd" firstAttribute="trailing" secondItem="wcI-OM-zKP" secondAttribute="trailingMargin" constant="2" id="1wp-eM-p7M"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="xyv-aM-CDe" secondAttribute="trailing" constant="2" id="LWg-1m-zMx"/>
-                                                <constraint firstItem="bva-6r-Omd" firstAttribute="top" secondItem="wcI-OM-zKP" secondAttribute="topMargin" constant="5" id="Xcn-hd-dRs"/>
+                                                <constraint firstItem="bva-6r-Omd" firstAttribute="top" secondItem="wcI-OM-zKP" secondAttribute="topMargin" constant="6" id="Xcn-hd-dRs"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="xyv-aM-CDe" secondAttribute="bottom" constant="30" id="Zww-z5-VOz"/>
                                                 <constraint firstItem="bva-6r-Omd" firstAttribute="leading" secondItem="wcI-OM-zKP" secondAttribute="leadingMargin" constant="2" id="usi-h3-uGg"/>
                                                 <constraint firstItem="xyv-aM-CDe" firstAttribute="leading" secondItem="wcI-OM-zKP" secondAttribute="leadingMargin" constant="2" id="xEm-C2-8sJ"/>
