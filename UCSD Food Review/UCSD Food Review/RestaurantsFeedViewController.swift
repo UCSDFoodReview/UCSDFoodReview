@@ -66,7 +66,15 @@ class RestaurantsFeedViewController: UIViewController, UITableViewDelegate, UITa
         return cell
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let restCell = restaurants[indexPath.row]
+        
+        let FoodViewController = segue.destination as! FoodFeedViewController
+        FoodViewController.restaurant = restCell
+    }
+
 
     /*
     // MARK: - Navigation
