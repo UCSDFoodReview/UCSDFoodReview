@@ -48,22 +48,39 @@ class RestaurantsFeedViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantCell") as! RestaurantCell
-        let restaurant = restaurants[indexPath.row]
-        
-        let name:String = restaurant["name"] as! String
-        
-      
-        let imageFile = dininghall["image"] as! PFFileObject
-        let imageURL = imageFile.url!
-        let url = URL(string: imageURL)!
-        cell.restaurantImage.af.setImage(withURL: url)
-        
-        
-        
-        cell.restaurantName.text = name
-        
-        return cell
+        if indexPath.row != 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantCell") as! RestaurantCell
+            let restaurant = restaurants[indexPath.row]
+            
+            let name:String = restaurant["name"] as! String
+            
+          
+            let imageFile = dininghall["image"] as! PFFileObject
+            let imageURL = imageFile.url!
+            let url = URL(string: imageURL)!
+            cell.restaurantImage.af.setImage(withURL: url)
+            
+            
+            
+            cell.restaurantName.text = name
+            
+            return cell
+        }
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "DiningResHeaderCell") as! DiningResHeaderCell
+            let name = dininghall["diningHallName"] as! String
+            let desc = dininghall["description"] as! String
+            
+            let imageFile = dininghall["image"] as! PFFileObject
+            let imageURL = imageFile.url!
+            let url = URL(string: imageURL)!
+            cell.diningHallImage.af.setImage(withURL: url)
+            cell.diningHallName.text = name
+            cell.diningHallDesc.text = desc
+            cell.diningHallDesc.sizeToFit()
+            
+            return cell
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

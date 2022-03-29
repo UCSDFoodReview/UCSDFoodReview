@@ -54,31 +54,65 @@ class FoodFeedViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FoodCell") as! FoodCell
-        let food = foodList[indexPath.row]
-        
-        let name:String = food["dishName"] as! String
-        
-        let price:Float = food["price"] as! Float
-        let strPrice = price.description
-        
-        var strRating = "0"
-        if food["avgRating"] != nil {
-            let avgRating = food["avgRating"] as! Float
-            strRating = avgRating.description
+        if indexPath.row != 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "FoodCell") as! FoodCell
+            let food = foodList[indexPath.row]
+            
+            let name:String = food["dishName"] as! String
+            
+            let price:Float = food["price"] as! Float
+            let strPrice = price.description
+            
+            var strRating = "0"
+            if food["avgRating"] != nil {
+                let avgRating = food["avgRating"] as! Float
+                strRating = avgRating.description
+            }
+            
+            
+            
+            
+            cell.foodName.text = name
+            cell.foodPrice.text = strPrice
+            cell.foodRating.text = strRating
+            
+            return cell
         }
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "RestHeaderCell") as! RestHeaderCell
+            let name:String = restaurant["name"] as! String
+            let dininghall = restaurant["diningHall"] as! PFObject
+            let imageFile = dininghall["image"] as! PFFileObject
+            let imageURL = imageFile.url!
+            let url = URL(string: imageURL)!
+            cell.restName.text = name
+            cell.restImage.af.setImage(withURL: url)
+            
+            return cell
+        }
+    }
         
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let foodCell = foodList[indexPath.row]
         
+        let ReviewViewController = segue.destination as! ReviewFeedViewController
+        ReviewViewController.foodReviewed = foodCell
+
+    }
+         
+    /*
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let foodCell = foodList[indexPath.row]
         
+        let destVC = ReviewFeedViewController()
+        destVC.foodReviewed = foodCell
         
-        cell.foodName.text = name
-        cell.foodPrice.text = strPrice
-        cell.foodRating.text = strRating
-        
-        return cell
+        destVC.performSegue(withIdentifier: "foodSegue", sender: self)
     }
     
-
+*/
     /*
     // MARK: - Navigation
 

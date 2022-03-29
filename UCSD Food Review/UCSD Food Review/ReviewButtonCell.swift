@@ -1,20 +1,17 @@
 //
-//  FoodCell.swift
+//  ReviewButtonCell.swift
 //  UCSD Food Review
 //
-//  Created by Brian on 3/19/22.
+//  Created by Brian on 3/28/22.
 //
 
 import UIKit
 
-class FoodCell: UITableViewCell {
+class ReviewButtonCell: UITableViewCell {
 
+    @IBOutlet weak var userPFP: UIImageView!
+    
     @IBOutlet weak var myView: UIView!
-    @IBOutlet weak var foodName: UILabel!
-    @IBOutlet weak var foodPrice: UILabel!
-    @IBOutlet weak var foodRating: UILabel!
-    
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,6 +26,10 @@ class FoodCell: UITableViewCell {
         myView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
         myView.layer.shadowRadius = 6.0
         myView.layer.shadowOpacity = 0.3
+        userPFP.layer.cornerRadius = userPFP.layer.bounds.width / 2
+        userPFP.clipsToBounds = true
+        userPFP.layer.borderColor = UIColor.darkGray.cgColor
+        userPFP.layer.borderWidth = 2.0
 
         // Configure the view for the selected state
     }
