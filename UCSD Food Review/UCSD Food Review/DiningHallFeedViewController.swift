@@ -47,33 +47,26 @@ class DiningHallFeedViewController: UIViewController, UITableViewDelegate, UITab
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DiningHallCell") as! DiningHallCell
-        
-        let diningHall = diningHalls[indexPath.row]
-        
-        let name:String = diningHall["diningHallName"] as! String
-        let description:String = diningHall["description"] as! String
-        
-        let imageFile = diningHall["image"] as! PFFileObject
-        let imageURL = imageFile.url!
-        let url = URL(string: imageURL)!
-        cell.diningHallName.text = name
-        cell.diningHallDescription.text = description
-        
-        cell.diningHallImage.af.setImage(withURL: url)
-        
-        cell.diningHallDescription.sizeToFit()
-//        cell.diningHallName.text = "test!"
-//        cell.diningHallDescription.text = "description!"
-        
-    /*    cell.diningHallName.text = "test"
-        cell.diningHallDescription.text = "test desc"
-        
-        let testName = diningHall["diningHallName"] as? String
-        print(testName)
-      */
-        
-        return cell
+        if indexPath.row != 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "DiningHallCell") as! DiningHallCell
+            
+            let diningHall = diningHalls[indexPath.row]
+            
+            let name:String = diningHall["diningHallName"] as! String
+            
+            let imageFile = diningHall["image"] as! PFFileObject
+            let imageURL = imageFile.url!
+            let url = URL(string: imageURL)!
+            cell.diningHallName.text = name
+            
+            cell.diningHallImage.af.setImage(withURL: url)
+            
+            return cell
+        }
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "DiningHallHeaderCell") as! DiningHallHeaderCell
+            return cell
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

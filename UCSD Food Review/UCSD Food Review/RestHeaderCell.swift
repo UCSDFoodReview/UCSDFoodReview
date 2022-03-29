@@ -1,17 +1,16 @@
 //
-//  RestaurantCell.swift
+//  RestHeaderCell.swift
 //  UCSD Food Review
 //
-//  Created by Brian on 3/19/22.
+//  Created by Brian on 3/28/22.
 //
 
 import UIKit
 
-class RestaurantCell: UITableViewCell {
+class RestHeaderCell: UITableViewCell {
 
-    
-    @IBOutlet weak var restaurantImage: UIImageView!
-    @IBOutlet weak var restaurantName: UILabel!
+    @IBOutlet weak var restName: UILabel!
+    @IBOutlet weak var restImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,9 +19,8 @@ class RestaurantCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        restImage.layer.cornerRadius = 10.0
         
-        restaurantImage.layer.cornerRadius = 10.0
-
         // Configure the view for the selected state
     }
 
