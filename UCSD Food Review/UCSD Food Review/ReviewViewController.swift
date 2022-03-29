@@ -16,10 +16,12 @@ class ReviewViewController: UIViewController {
     @IBOutlet weak var foodName: UILabel!
     @IBOutlet weak var starRating: CosmosView!
     
+    var foodReviewed = PFObject(className: "Food")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         starRating.settings.disablePanGestures = true
-
+    
         // Do any additional setup after loading the view.
     }
     
@@ -29,6 +31,7 @@ class ReviewViewController: UIViewController {
         review["author"] = PFUser.current()!
         review["review"] = reviewText.text!
         review["rating"] = starRating.rating
+        review["foodReviewed"] = foodReviewed
         
         review.saveInBackground { (success, error) in
             if success {
