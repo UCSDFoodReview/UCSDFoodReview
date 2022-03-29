@@ -110,6 +110,18 @@ class ReviewFeedViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //let cell = sender as! UITableViewCell
+//        let indexPath = tableView.indexPath(for: cell)!
+//        let reviewCell = reviewList[indexPath.row]
+//
+        let ReviewViewController = segue.destination as! ReviewViewController
+        ReviewViewController.foodReviewed = foodReviewed
+        //let restaurantPointer = foodReviewed["restaurant"]
+        //let restaurantName = restaurantPointer["name"] as? String
+        
+    }
+    
 
     /*
     // MARK: - Navigation

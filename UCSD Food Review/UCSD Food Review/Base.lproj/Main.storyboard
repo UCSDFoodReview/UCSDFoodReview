@@ -1073,11 +1073,6 @@
             <point key="canvasLocation" x="9328.9855072463779" y="984.375"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="VGs-nK-41m">
-            <size key="intrinsicContentSize" width="170" height="30"/>
-        </designable>
-    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="ci1-cE-ch8"/>
         <segue reference="pCu-Qe-FYW"/>
