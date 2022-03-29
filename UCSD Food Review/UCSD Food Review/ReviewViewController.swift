@@ -21,7 +21,10 @@ class ReviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         starRating.settings.disablePanGestures = true
-    
+        
+        restaurantName.text = foodReviewed["restaurant"] as? String
+        foodName.text = foodReviewed["dishName"] as? String
+        
         // Do any additional setup after loading the view.
     }
     
@@ -32,6 +35,8 @@ class ReviewViewController: UIViewController {
         review["review"] = reviewText.text!
         review["rating"] = starRating.rating
         review["foodReviewed"] = foodReviewed
+        
+        print("food reviewed: ", foodReviewed)
         
         review.saveInBackground { (success, error) in
             if success {
