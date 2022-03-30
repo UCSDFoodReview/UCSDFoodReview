@@ -10,7 +10,7 @@ import Parse
 import AlamofireImage
 import Foundation
 
-class ReviewFeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ReviewFeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIAdaptivePresentationControllerDelegate{
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -19,11 +19,16 @@ class ReviewFeedViewController: UIViewController, UITableViewDelegate, UITableVi
     
     var reviewList = [PFObject]()
     
+    let myRefreshControl = UIRefreshControl()
+    
+    
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        myRefreshControl.addTarget(self, action: #selector(refreshTable), for: .valueChanged)
+        tableView.refreshControl = myRefreshControl
+        refreshTable()
         tableView.delegate = self
         tableView.dataSource = self
 
@@ -32,17 +37,24 @@ class ReviewFeedViewController: UIViewController, UITableViewDelegate, UITableVi
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+        refreshTable()
+    }
+    
+    @objc func refreshTable() {
         let query = PFQuery(className: "Review")
+        
         query.whereKey("foodReviewed", equalTo:foodReviewed)
         query.includeKeys(["createdAt", "review", "rating", "author"])
-        query.limit = 100
+        query.order(byDescending: "createdAt")
+        query.limit = 50
         
         query.findObjectsInBackground {
             (reviewList, error) in
             if reviewList != nil {
                 self.reviewList = reviewList!
                 self.tableView.reloadData()
+                print("refreshed!")
+                self.myRefreshControl.endRefreshing()
             } else {
                 print("Error: \(error)")
             }
@@ -83,7 +95,7 @@ class ReviewFeedViewController: UIViewController, UITableViewDelegate, UITableVi
         }
         else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "RatingsCell") as! RatingsCell
-            let review = reviewList[indexPath.row]
+            let review = reviewList[indexPath.row - 2]
             
             let author = review["author"] as! PFUser
             
@@ -91,15 +103,16 @@ class ReviewFeedViewController: UIViewController, UITableViewDelegate, UITableVi
             let imageURL = imageFile.url!
             let url = URL(string: imageURL)!
             let name:String = author["fullname"] as! String
+            /*
             let date:Date = review["createdAt"] as! Date
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "mm/dd/YY"
-            
+            */
             let reviewText:String = review["review"] as! String
             
             cell.userProfileImage.af.setImage(withURL: url)
             cell.reviewFullName.text = name
-            cell.dateReviewed.text = dateFormatter.string(from: date)
+            //cell.dateReviewed.text = dateFormatter.string(from: date)
             cell.reviewText.text = reviewText
             
             return cell
@@ -109,14 +122,14 @@ class ReviewFeedViewController: UIViewController, UITableViewDelegate, UITableVi
         }
     }
     
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //let cell = sender as! UITableViewCell
 //        let indexPath = tableView.indexPath(for: cell)!
 //        let reviewCell = reviewList[indexPath.row]
 //
         let ReviewViewController = segue.destination as! ReviewViewController
-        ReviewViewController.foodReviewed = foodReviewed
+        ReviewViewController.delegate = self
+        ReviewViewController.food = foodReviewed
         //let restaurantPointer = foodReviewed["restaurant"]
         //let restaurantName = restaurantPointer["name"] as? String
         
