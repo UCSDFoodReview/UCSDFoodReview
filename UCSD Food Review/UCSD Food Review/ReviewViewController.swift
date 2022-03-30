@@ -8,6 +8,7 @@
 import UIKit
 import Cosmos
 import Parse
+import CryptoKit
 
 class ReviewViewController: UIViewController {
     
@@ -29,6 +30,9 @@ class ReviewViewController: UIViewController {
         foodName.text = foodStr
         buildTextViewBorder()
         
+        //Allow dismissal of keyboard
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
         
         
     
@@ -50,6 +54,20 @@ class ReviewViewController: UIViewController {
         review["review"] = reviewText.text!
         review["rating"] = starRating.rating
         review["foodReviewed"] = food
+        var total = starRating.rating
+        var num = 1
+        
+        if food["totalRating"] != nil {
+            total += food["totalRating"] as! Double
+        }
+        if food["numRatings"] != nil {
+            num += food["numRatings"] as! Int
+        }
+        let avg = total/Double(num)
+        food["avgRating"] = avg
+        food["totalRating"] = total
+        food["numRatings"] = num
+        food.saveInBackground()
         
         review.saveInBackground { (success, error) in
             if success {
