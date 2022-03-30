@@ -50,7 +50,8 @@ class RestaurantsFeedViewController: UIViewController, UITableViewDelegate, UITa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row != 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantCell") as! RestaurantCell
-            let restaurant = restaurants[indexPath.row]
+            let idx = indexPath.row - 1
+            let restaurant = restaurants[idx]
             
             let name:String = restaurant["name"] as! String
             
@@ -86,7 +87,8 @@ class RestaurantsFeedViewController: UIViewController, UITableViewDelegate, UITa
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPath(for: cell)!
-        let restCell = restaurants[indexPath.row]
+        let idx = indexPath.row - 1
+        let restCell = restaurants[idx]
         
         let FoodViewController = segue.destination as! FoodFeedViewController
         FoodViewController.restaurant = restCell

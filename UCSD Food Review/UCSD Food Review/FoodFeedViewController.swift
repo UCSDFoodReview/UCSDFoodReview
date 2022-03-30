@@ -34,7 +34,7 @@ class FoodFeedViewController: UIViewController, UITableViewDelegate, UITableView
         
         let query = PFQuery(className: "Food")
         query.whereKey("restaurant", equalTo:restaurant)
-        query.includeKeys(["dishName", "price", "avgRating", "numRating", "totalRating", "restaurant"])
+        query.includeKeys(["dishName", "price", "avgRating", "numRatings", "totalRating", "restaurant"])
         query.limit = 40
         
         query.findObjectsInBackground {
@@ -56,25 +56,24 @@ class FoodFeedViewController: UIViewController, UITableViewDelegate, UITableView
         
         if indexPath.row != 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "FoodCell") as! FoodCell
-            let food = foodList[indexPath.row]
+            let idx = indexPath.row - 1
+            let food = foodList[idx]
             
             let name:String = food["dishName"] as! String
             
             let price:Float = food["price"] as! Float
-            let strPrice = price.description
             
-            var strRating = "0"
+            var avgRating = 0.0
             if food["avgRating"] != nil {
-                let avgRating = food["avgRating"] as! Float
-                strRating = avgRating.description
+                avgRating = food["avgRating"] as! Double
             }
             
             
             
             
             cell.foodName.text = name
-            cell.foodPrice.text = strPrice
-            cell.foodRating.text = strRating
+            cell.foodPrice.text = String(format: "%.2f", price)
+            cell.foodRating.text = String(format: "%.1f", avgRating)
             
             return cell
         }
@@ -95,7 +94,8 @@ class FoodFeedViewController: UIViewController, UITableViewDelegate, UITableView
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPath(for: cell)!
-        let foodCell = foodList[indexPath.row]
+        let idx = indexPath.row - 1
+        let foodCell = foodList[idx]
         
         let ReviewViewController = segue.destination as! ReviewFeedViewController
         ReviewViewController.foodReviewed = foodCell

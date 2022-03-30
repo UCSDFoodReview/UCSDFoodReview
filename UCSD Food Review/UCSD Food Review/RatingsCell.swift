@@ -19,6 +19,10 @@ class RatingsCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        userProfileImage.layer.cornerRadius = userProfileImage.layer.bounds.width / 2
+        userProfileImage.clipsToBounds = true
+        userProfileImage.layer.borderColor = UIColor.darkGray.cgColor
+        userProfileImage.layer.borderWidth = 2.0
         // Initialization code
     }
 

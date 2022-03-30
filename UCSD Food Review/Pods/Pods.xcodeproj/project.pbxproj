@@ -874,6 +874,7 @@
 		7AEC23771C4B368E9F077EE14F878ECB /* PFFileUploadResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFFileUploadResult.m; path = Parse/Parse/Internal/File/Controller/PFFileUploadResult.m; sourceTree = "<group>"; };
 		7C094188F586900190EF987F19838385 /* PFCloud+Synchronous.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PFCloud+Synchronous.h"; path = "Parse/Parse/PFCloud+Synchronous.h"; sourceTree = "<group>"; };
 		7C7F4C890E352D7E3B163B668876DDB9 /* PFMutablePushState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFMutablePushState.m; path = Parse/Parse/Internal/Push/State/PFMutablePushState.m; sourceTree = "<group>"; };
+		7CA6370227F5100B00EF3964 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "../UCSD Food Review/SettingsViewController.swift"; sourceTree = "<group>"; };
 		7D223A757CB66BC0A22BEAEE50422256 /* PFMutableRelationState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFMutableRelationState.m; path = Parse/Parse/Internal/Relation/State/PFMutableRelationState.m; sourceTree = "<group>"; };
 		7D717F7FE7879D2C113FC251F4BA5D3A /* PFSystemLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFSystemLogger.m; path = Parse/Parse/Internal/PFSystemLogger.m; sourceTree = "<group>"; };
 		7E6E5907083AEADD7A1521981A38CA64 /* PFUserAuthenticationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFUserAuthenticationController.h; path = Parse/Parse/Internal/User/AuthenticationProviders/Controller/PFUserAuthenticationController.h; sourceTree = "<group>"; };
@@ -1843,6 +1844,7 @@
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
+				7CA6370227F5100B00EF3964 /* SettingsViewController.swift */,
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				0656CE04288357F0748AB498835BA03E /* Frameworks */,
 				126825DCB6989BFA0F75D2B8C2F62908 /* Pods */,

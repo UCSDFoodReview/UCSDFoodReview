@@ -34,6 +34,7 @@
 		7C5C6BB027E6962400AA27A1 /* RatingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C6BAF27E6962400AA27A1 /* RatingsCell.swift */; };
 		7C73B10D27F21C440060E686 /* ReviewFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C73B10C27F21C440060E686 /* ReviewFeedViewController.swift */; };
 		7C9BC66627F2ACA200AC1995 /* DiningResHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9BC66527F2ACA200AC1995 /* DiningResHeaderCell.swift */; };
+		7CA6370427F5100F00EF3964 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6370327F5100F00EF3964 /* SettingsViewController.swift */; };
 		A216594C53372243F666C967 /* Pods_UCSD_Food_Review_UCSD_Food_ReviewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCF1A8B908419BCB8653EAA /* Pods_UCSD_Food_Review_UCSD_Food_ReviewUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		7C5C6BAF27E6962400AA27A1 /* RatingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsCell.swift; sourceTree = "<group>"; };
 		7C73B10C27F21C440060E686 /* ReviewFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFeedViewController.swift; sourceTree = "<group>"; };
 		7C9BC66527F2ACA200AC1995 /* DiningResHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningResHeaderCell.swift; sourceTree = "<group>"; };
+		7CA6370327F5100F00EF3964 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B13266F51B232CA19856571C /* Pods_UCSD_Food_ReviewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UCSD_Food_ReviewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2AC889BEB56A9CA2EA39B1A /* Pods-UCSD Food ReviewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCSD Food ReviewTests.debug.xcconfig"; path = "Target Support Files/Pods-UCSD Food ReviewTests/Pods-UCSD Food ReviewTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B70FA4FDCF48A0606E40B3F9 /* Pods-UCSD Food Review.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCSD Food Review.release.xcconfig"; path = "Target Support Files/Pods-UCSD Food Review/Pods-UCSD Food Review.release.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				7C5C6BAF27E6962400AA27A1 /* RatingsCell.swift */,
 				7C4E303027F2655B00D5D13F /* FoodDescRatingsCell.swift */,
 				7C4E303627F27D0B00D5D13F /* RestHeaderCell.swift */,
+				7CA6370327F5100F00EF3964 /* SettingsViewController.swift */,
 				7C4E303827F28B6100D5D13F /* DiningHallHeaderCell.swift */,
 			);
 			path = "UCSD Food Review";
@@ -457,6 +460,7 @@
 				7C73B10D27F21C440060E686 /* ReviewFeedViewController.swift in Sources */,
 				7C5C6BA427E67DFA00AA27A1 /* RestaurantsFeedViewController.swift in Sources */,
 				7C4E303927F28B6100D5D13F /* DiningHallHeaderCell.swift in Sources */,
+				7CA6370427F5100F00EF3964 /* SettingsViewController.swift in Sources */,
 				7C9BC66627F2ACA200AC1995 /* DiningResHeaderCell.swift in Sources */,
 				7C5C6BB027E6962400AA27A1 /* RatingsCell.swift in Sources */,
 				7C5C6BAE27E6960C00AA27A1 /* FoodCell.swift in Sources */,

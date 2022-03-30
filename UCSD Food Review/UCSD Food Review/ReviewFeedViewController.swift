@@ -71,14 +71,13 @@ class ReviewFeedViewController: UIViewController, UITableViewDelegate, UITableVi
             let name:String = foodReviewed["dishName"] as! String
             let price:Float = foodReviewed["price"] as! Float
             let strPrice = price.description
-            var strRating = "0"
+            var avgRating = 0.0
             if foodReviewed["avgRating"] != nil {
-                let avgRating = foodReviewed["avgRating"] as! Float
-                strRating = avgRating.description
+                avgRating = foodReviewed["avgRating"] as! Double
             }
             cell.foodName.text = name
             cell.foodPrice.text = strPrice
-            cell.foodRating.text = strRating
+            cell.foodRating.text = String(format: "%.1f", avgRating)
             
             return cell
         }
