@@ -44,29 +44,14 @@ class RestaurantsFeedViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return restaurants.count
+        return restaurants.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row != 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantCell") as! RestaurantCell
-            let restaurant = restaurants[indexPath.row]
+        
+        
+        if indexPath.row == 0 {
             
-            let name:String = restaurant["name"] as! String
-            
-          
-            let imageFile = dininghall["image"] as! PFFileObject
-            let imageURL = imageFile.url!
-            let url = URL(string: imageURL)!
-            cell.restaurantImage.af.setImage(withURL: url)
-            
-            
-            
-            cell.restaurantName.text = name
-            
-            return cell
-        }
-        else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "DiningResHeaderCell") as! DiningResHeaderCell
             let name = dininghall["diningHallName"] as! String
             let desc = dininghall["description"] as! String
@@ -80,13 +65,33 @@ class RestaurantsFeedViewController: UIViewController, UITableViewDelegate, UITa
             cell.diningHallDesc.sizeToFit()
             
             return cell
+            
+        }
+        else {
+            let idx = indexPath.row - 1
+            let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantCell") as! RestaurantCell
+            let restaurant = restaurants[idx]
+            
+            let name:String = restaurant["name"] as! String
+            
+          
+            let imageFile = dininghall["image"] as! PFFileObject
+            let imageURL = imageFile.url!
+            let url = URL(string: imageURL)!
+            cell.restaurantImage.af.setImage(withURL: url)
+            
+            cell.restaurantName.text = name
+            
+            return cell
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPath(for: cell)!
-        let restCell = restaurants[indexPath.row]
+        
+        let idx = indexPath.row - 1
+        let restCell = restaurants[idx]
         
         let FoodViewController = segue.destination as! FoodFeedViewController
         FoodViewController.restaurant = restCell

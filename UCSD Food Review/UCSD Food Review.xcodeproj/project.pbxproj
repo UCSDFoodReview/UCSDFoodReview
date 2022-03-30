@@ -152,9 +152,6 @@
 				4C1CA22427D9B05400D88A5E /* SceneDelegate.swift */,
 				4C1CA22627D9B05400D88A5E /* ViewController.swift */,
 				4C1CA22827D9B05500D88A5E /* Main.storyboard */,
-				7C9BC66527F2ACA200AC1995 /* DiningResHeaderCell.swift */,
-				7C73B10C27F21C440060E686 /* ReviewFeedViewController.swift */,
-				7C4E303227F266C700D5D13F /* ReviewButtonCell.swift */,
 				4C1CA22B27D9B05800D88A5E /* Assets.xcassets */,
 				4C1CA22D27D9B05800D88A5E /* LaunchScreen.storyboard */,
 				4C1CA23027D9B05800D88A5E /* Info.plist */,
@@ -163,14 +160,17 @@
 				3B0B093C27DD565000139861 /* DiningHallFeedViewController.swift */,
 				7C5C6BA327E67DFA00AA27A1 /* RestaurantsFeedViewController.swift */,
 				7C5C6BA527E67E7F00AA27A1 /* FoodFeedViewController.swift */,
+				7C73B10C27F21C440060E686 /* ReviewFeedViewController.swift */,
 				7C5C6BA727E67EC700AA27A1 /* ReviewViewController.swift */,
 				7C5C6BA927E6841900AA27A1 /* DiningHallCell.swift */,
 				7C5C6BAB27E695FB00AA27A1 /* RestaurantCell.swift */,
 				7C5C6BAD27E6960C00AA27A1 /* FoodCell.swift */,
 				7C5C6BAF27E6962400AA27A1 /* RatingsCell.swift */,
 				7C4E303027F2655B00D5D13F /* FoodDescRatingsCell.swift */,
+				7C9BC66527F2ACA200AC1995 /* DiningResHeaderCell.swift */,
 				7C4E303627F27D0B00D5D13F /* RestHeaderCell.swift */,
 				7C4E303827F28B6100D5D13F /* DiningHallHeaderCell.swift */,
+				7C4E303227F266C700D5D13F /* ReviewButtonCell.swift */,
 			);
 			path = "UCSD Food Review";
 			sourceTree = "<group>";

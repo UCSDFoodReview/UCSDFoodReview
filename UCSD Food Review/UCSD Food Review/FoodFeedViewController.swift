@@ -49,14 +49,15 @@ class FoodFeedViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return foodList.count
+        return foodList.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row != 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "FoodCell") as! FoodCell
-            let food = foodList[indexPath.row]
+            let idx = indexPath.row - 1
+            let food = foodList[idx]
             
             let name:String = food["dishName"] as! String
             
@@ -95,7 +96,8 @@ class FoodFeedViewController: UIViewController, UITableViewDelegate, UITableView
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPath(for: cell)!
-        let foodCell = foodList[indexPath.row]
+        let idx = indexPath.row - 1
+        let foodCell = foodList[idx]
         
         let ReviewViewController = segue.destination as! ReviewFeedViewController
         ReviewViewController.foodReviewed = foodCell

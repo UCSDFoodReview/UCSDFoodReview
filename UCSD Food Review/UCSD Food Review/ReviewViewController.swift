@@ -19,6 +19,8 @@ class ReviewViewController: UIViewController {
     
     var food = PFObject(className: "Food")
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         starRating.settings.disablePanGestures = true
@@ -28,6 +30,10 @@ class ReviewViewController: UIViewController {
         restaurantName.text = restName
         foodName.text = foodStr
         buildTextViewBorder()
+        
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+                view.addGestureRecognizer(tap)
+        
         
         
         
@@ -72,5 +78,8 @@ class ReviewViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
 
 }
+

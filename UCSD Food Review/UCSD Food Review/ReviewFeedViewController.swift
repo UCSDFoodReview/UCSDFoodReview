@@ -12,13 +12,12 @@ import Foundation
 
 class ReviewFeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIAdaptivePresentationControllerDelegate{
     
-    
+    //Outlets
     @IBOutlet weak var tableView: UITableView!
     
+    //Local Variables
     var foodReviewed = PFObject(className: "Food")
-    
     var reviewList = [PFObject]()
-    
     let myRefreshControl = UIRefreshControl()
     
     
@@ -26,11 +25,16 @@ class ReviewFeedViewController: UIViewController, UITableViewDelegate, UITableVi
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        myRefreshControl.addTarget(self, action: #selector(refreshTable), for: .valueChanged)
-        tableView.refreshControl = myRefreshControl
-        refreshTable()
+        
         tableView.delegate = self
         tableView.dataSource = self
+        
+        refreshTable()
+        
+        myRefreshControl.addTarget(self, action: #selector(refreshTable), for: .valueChanged)
+        tableView.refreshControl = myRefreshControl
+        
+        
 
         // Do any additional setup after loading the view.
     }

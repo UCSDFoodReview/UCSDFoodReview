@@ -43,14 +43,14 @@ class DiningHallFeedViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return diningHalls.count
+        return diningHalls.count + 1
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row != 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "DiningHallCell") as! DiningHallCell
-            
-            let diningHall = diningHalls[indexPath.row]
+            let idx = indexPath.row - 1
+            let diningHall = diningHalls[idx]
             
             let name:String = diningHall["diningHallName"] as! String
             
@@ -72,7 +72,8 @@ class DiningHallFeedViewController: UIViewController, UITableViewDelegate, UITab
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPath(for: cell)!
-        let diningHall = diningHalls[indexPath.row]
+        let idx = indexPath.row - 1
+        let diningHall = diningHalls[idx]
         
         let RestaurantsViewController = segue.destination as! RestaurantsFeedViewController
         RestaurantsViewController.dininghall = diningHall
