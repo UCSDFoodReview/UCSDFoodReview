@@ -10,32 +10,52 @@ import Cosmos
 import Parse
 
 class ReviewViewController: UIViewController {
-    @IBOutlet weak var foodImage: UIImageView!
+    
+    weak var delegate:ReviewFeedViewController?
     @IBOutlet weak var restaurantName: UILabel!
-    @IBOutlet weak var reviewText: UITextField!
+    @IBOutlet weak var reviewText: UITextView!
     @IBOutlet weak var foodName: UILabel!
     @IBOutlet weak var starRating: CosmosView!
     
-    var foodReviewed = PFObject(className: "Food")
+    var food = PFObject(className: "Food")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         starRating.settings.disablePanGestures = true
+        let restaurant = food["restaurant"] as! PFObject
+        let restName:String = restaurant["name"] as! String
+        let foodStr:String = food["dishName"] as! String
+        restaurantName.text = restName
+        foodName.text = foodStr
+        buildTextViewBorder()
+        
+        
+        
     
         // Do any additional setup after loading the view.
     }
-    
+    func buildTextViewBorder(){
+          let borderColor : UIColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
+          reviewText.layer.borderWidth = 0.5
+          reviewText.layer.borderColor = borderColor.cgColor
+          reviewText.layer.cornerRadius = 5.0
+      }
     @IBAction func onSubmit(_ sender: Any) {
+        
+        
+                                
         let review = PFObject(className: "Review")
         
         review["author"] = PFUser.current()!
         review["review"] = reviewText.text!
         review["rating"] = starRating.rating
-        review["foodReviewed"] = foodReviewed
+        review["foodReviewed"] = food
         
         review.saveInBackground { (success, error) in
             if success {
+                self.delegate?.refreshTable()
                 self.dismiss(animated: true, completion: nil)
+                
                 print("Saved")
             } else {
                 print("Error!")

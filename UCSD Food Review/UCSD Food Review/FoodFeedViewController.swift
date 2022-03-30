@@ -34,7 +34,7 @@ class FoodFeedViewController: UIViewController, UITableViewDelegate, UITableView
         
         let query = PFQuery(className: "Food")
         query.whereKey("restaurant", equalTo:restaurant)
-        query.includeKeys(["dishName", "price", "avgRating", "numRating", "totalRating"])
+        query.includeKeys(["dishName", "price", "avgRating", "numRating", "totalRating", "restaurant"])
         query.limit = 40
         
         query.findObjectsInBackground {
