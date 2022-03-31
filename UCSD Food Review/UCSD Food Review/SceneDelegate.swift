@@ -25,6 +25,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window?.rootViewController = diningHallNavigationController
         }
         
+        if #available(iOS 13, *) {
+            window!.overrideUserInterfaceStyle = .light
+        }
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

@@ -946,7 +946,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Save"/>
                                 <connections>
-                                    <action selector="onSubmit:" destination="j07-iO-UoH" eventType="touchUpInside" id="sym-lf-29I"/>
+                                    <action selector="onSubmit:" destination="j07-iO-UoH" eventType="touchUpInside" id="YSB-0V-dgA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmc-2f-nuJ">
@@ -955,7 +955,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Edit Profile Picture"/>
                                 <connections>
-                                    <action selector="openCameraRoll:" destination="j07-iO-UoH" eventType="touchUpInside" id="rag-q6-Rqx"/>
+                                    <action selector="openCameraRoll:" destination="j07-iO-UoH" eventType="touchUpInside" id="dgB-DC-fZe"/>
                                 </connections>
                             </button>
                         </subviews>
