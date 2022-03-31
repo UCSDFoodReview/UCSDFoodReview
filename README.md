@@ -32,9 +32,9 @@ Original App Design Project - README Template
 **Required Must-have Stories**
 
 - [x] User can register or login to post reviews. 
-- [ ] User can select betwen different dining halls and the view food options from each dining hall. 
-- [ ] Rating system out of five stars for each dining hall and food item.
-- [ ] Food page includes description and price, average rating of food.
+- [x] User can select betwen different dining halls and the view food options from each dining hall. 
+- [x] Rating system out of five stars for each dining hall and food item.
+- [x] Food page includes description and price, average rating of food.
 - [ ] Users can upvote/downvote reviews and reply
 - [ ] User can view profile in settings
 
